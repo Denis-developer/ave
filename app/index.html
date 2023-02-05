@@ -1,17 +1,127 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <h1>Hello world!!!</h1>
-    <!--SCRIPT-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avenue fashion</title>
+  <!-- CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__currency">
+            Currency:
+            <ul class="currency-list">
+              <li>
+                GBP <i class="fa-solid fa-chevron-down"></i>
+                <ul class="currency-sublist">
+                  <li>
+                    <a href="#" class="currency-sublist__link">EUR</a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-sublist__link">USD</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header__top_right">
+            <div class="header-auth">
+              <a href="#" class="header-auth__link">Register</a>
+              <a href="#" class="header-auth__link">Sign in</a>
+            </div>
+            <a href="#" class="header__basket">
+              <i class="fa-solid fa-cart-shopping"></i>empty
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <a href="index.html" class="header__logo">avenue <span>fashion</span></a>
+        <div class="header__bottom_right">
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <span>Mens<i class="fa-solid fa-chevron-down"></i></span>
+                <div class="header-menu__wrapper">
+                  <div class="header-menuBlock">
+                    <ul class="header-menuBlock__list">
+                      <h5 class="header-menuBlock__title">casuals</h5>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Jackets</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Hoodies & Sweatshirts</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Polo Shirts</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Sportswear</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Trousers & Chinos</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">T-Shirts</a>
+                      </li>
+                    </ul>
+                    <ul class="header-menuBlock__list">
+                      <h5 class="header-menuBlock__title">Formal</h5>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Jackets</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Shirts</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Suits</a>
+                      </li>
+                      <li class="header-menuBlock__item">
+                        <a href="#" class="header-menuBlock__link">Trousers</a>
+                      </li>
+                    </ul>
+                    <div class="header-menuBlock__banner">
+                      <span>Autumn sale</span>
+                      up to 50% off
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <span>Womens<i class="fa-solid fa-chevron-down"></i></span>
+              </li>
+              <li class="header-menu__item"><span>The brand</span></li>
+              <li class="header-menu__item">
+                <span>Local stores<i class="fa-solid fa-chevron-down"></i></span>
+              </li>
+              <li class="header-menu__item">
+                <span>Look book<i class="fa-solid fa-chevron-down"></i></span>
+              </li>
+            </ul>
+          </nav>
+          <form action="#" class="header-search">
+            <input type="text" class="header-search__input" placeholder="Search">
+            <a href="#" class="header-search__btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </form>
+        </div>
+      </div>
+    </header>
+    <h1 class="main__title"><span>A</span><span>V</span>E</h1>
+    <a href="#" class="main__btn">shop men’s collection</a>
+  </main>
+  <!--SCRIPT-->
+  <script src="js/script.js"></script>
+</body>
+
 </html>

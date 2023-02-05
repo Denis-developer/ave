@@ -13,7 +13,7 @@ const gulp = require('gulp'),
 
 // // ПРЕОБРАЗОВАНИЕ SASS ФАЙЛОВ В CSS
 gulp.task('sass', function () {
-	return gulp.src('app/sass/style.sass')
+	return gulp.src('app/sass/style.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({
 			errorLogToConsole: true,
