@@ -1,0 +1,61 @@
+.header__hamburger {
+    display: none;
+    position: relative;
+    z-index: 5;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+
+    &::before,
+    &::after,
+    span {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s;
+        background-color: #000;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    span {
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+    }
+
+    &.active {
+        // position: absolute;
+        // top: 0px;
+        // right: 0;
+        &::after, &::before, span {
+            background: #fff;
+        }
+        span {
+            display: none;
+        }
+        &::before {
+            top: 50%;
+            transform: translate(0px, -50%) rotate(-45deg);
+        }
+        &::after {
+            bottom: 50%;
+            transform: translate(0px, 50%) rotate(45deg);
+        }
+    }
+}
+
+.lock {
+    overflow: hidden;
+}

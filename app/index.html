@@ -13,37 +13,38 @@
 </head>
 
 <body>
-  <main class="main">
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__currency">
-            Currency:
-            <ul class="currency-list">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top__currency">
+        Currency:
+        <ul class="currency-list">
+          <li>
+            GBP <i class="fa-solid fa-chevron-down"></i>
+            <ul class="currency-sublist">
               <li>
-                GBP <i class="fa-solid fa-chevron-down"></i>
-                <ul class="currency-sublist">
-                  <li>
-                    <a href="#" class="currency-sublist__link">EUR</a>
-                  </li>
-                  <li>
-                    <a href="#" class="currency-sublist__link">USD</a>
-                  </li>
-                </ul>
+                <a href="#" class="currency-sublist__link">EUR</a>
+              </li>
+              <li>
+                <a href="#" class="currency-sublist__link">USD</a>
               </li>
             </ul>
-          </div>
-          <div class="header__top_right">
-            <div class="header-auth">
-              <a href="#" class="header-auth__link">Register</a>
-              <a href="#" class="header-auth__link">Sign in</a>
-            </div>
-            <a href="#" class="header__basket">
-              <i class="fa-solid fa-cart-shopping"></i>empty
-            </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
+      <div class="header-top_right">
+        <div class="header-auth">
+          <a href="#" class="header-auth__link">Register</a>
+          <a href="#" class="header-auth__link">Sign in</a>
+        </div>
+        <a href="#" class="header-top__basket">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>empty</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <header class="header">
       <div class="header__bottom">
         <a href="index.html" class="header__logo">avenue <span>fashion</span></a>
         <div class="header__bottom_right">
@@ -114,6 +115,9 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </form>
+        </div>
+        <div class="header__hamburger">
+          <span></span>
         </div>
       </div>
     </header>
