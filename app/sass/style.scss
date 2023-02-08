@@ -5,6 +5,7 @@
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/hamburger";
+@import "blocks/catalog";
 
 * {
     box-sizing: border-box; 
@@ -15,10 +16,19 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f8f8f8;
 }
 
+.container_big {
+    padding: 0px 140px;
+    width: 100%;
+}
 
+.container_small {
+    max-width: 100%;
+    padding: 0px 20px;
+    width: 1210px;
+    margin: 0 auto;
+}
 
 
 

@@ -1,10 +1,15 @@
 .main {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-height: 95vh;
     padding-bottom: 120px;
     background: url(../img/main/main-bg.jpg) no-repeat center center / cover;
+    background-color: #f8f8f8;
+
+    .container_big {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     &__btn {
         display: inline-block;

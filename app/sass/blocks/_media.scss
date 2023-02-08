@@ -1,7 +1,6 @@
 @media (max-width: 1920px) {
-    .header__bottom {
-        padding-left: 50px;
-        padding-right: 50px;
+    .container_big {
+        padding: 0px 50px;
     }
 
     .main__btn {
@@ -14,9 +13,8 @@
         margin-right: 20px;
     }
 
-    .header__bottom {
-        padding-left: 20px;
-        padding-right: 20px;
+    .container_big {
+        padding: 0px 20px;
     }
 
     .header-menu__item {
@@ -163,13 +161,12 @@
         }
     }
 
-    .header-top .container {
+    .container_small {
         padding: 0px 10px;
     }
 
-    .header__bottom {
-        padding-left: 10px;
-        padding-right: 10px;
+    .container_big {
+        padding: 0px 10px;
     }
 
     .main__btn {
