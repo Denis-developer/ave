@@ -1,5 +1,3 @@
-$(document).ready(function () {
-
     const menuBurger = document.querySelector('.header__hamburger');
     if (menuBurger) {
         const menuMobile = document.querySelector('.header__bottom_right');
@@ -13,10 +11,6 @@ $(document).ready(function () {
 
     let catalogImg = document.querySelectorAll('.catalog-item__img');
     let catalogPreview = document.querySelectorAll('.catalog-preview__img');
-
-    // for (let i = 0; i < catalogImg.length; i++) {
-    //     console.log(catalogImg[i].getAttribute('data-catalogImg'));
-    // }
 
     for (let i = 0; i < catalogPreview.length; i++) {
         catalogPreview[i].addEventListener('mouseover', function (e) {
@@ -35,11 +29,3 @@ $(document).ready(function () {
         })
 
     }
-
-    // $('.catalog-item').slick({
-    //     infinite: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false
-    // });
-});
