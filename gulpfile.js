@@ -19,7 +19,7 @@ gulp.task('sass', function () {
 			errorLogToConsole: true,
 			outputStyle: 'compressed'
 		}))
-		.on('error', console.error.bind(console))
+		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(rename({ suffix: ".min" }))
 		.pipe(sourcemaps.write('./'))

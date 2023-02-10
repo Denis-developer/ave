@@ -1,0 +1,110 @@
+.page {
+    overflow: hidden;
+    &-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 160px 0px;
+        background: url(../img/brand/intro.jpg) no-repeat center center / cover;
+        color: #fff;
+        text-align: center;
+
+        &__title {
+            font-size: 48px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+            line-height: 54px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        &__text {
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
+.brand {
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &-block {
+        &_1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            .brand-content {
+                padding-bottom: 150px;
+            }
+        }
+
+        &_2 {
+            margin-top: 60px;
+        }
+
+        &_3 {
+            position: relative;
+            top: -100px;
+        }
+
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    &-awards {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-content {
+        &__title {
+            color: #575153;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-top: 25px;
+        }
+
+        &__subtitle {
+            color: #727272;
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 13px;
+        }
+
+        &__text {
+            color: #8e8c8c;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+
+            a {
+                color: $blue;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

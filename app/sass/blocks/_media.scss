@@ -88,19 +88,20 @@
             flex-direction: column;
         }
 
+        &__link {
+            display: block;
+            color: #fff;
+            font-size: 20px;
+
+            i {
+                margin-left: 10px;
+            }
+        }
+
         &__item {
             margin-bottom: 20px;
             font-size: 18px;
             transition: all 0.4s;
-
-            span {
-                display: block;
-                color: #fff;
-
-                i {
-                    margin-left: 10px;
-                }
-            }
         }
 
         &__wrapper {
@@ -119,6 +120,7 @@
         &__title,
         &__link {
             color: #fff;
+            font-size: 18px;
         }
 
         &__banner {
@@ -187,6 +189,51 @@
     .footer-banner {
         font-size: 30px;
     }
+
+    .brand__wrapper {
+        display: block;
+    }
+
+    .brand {
+        padding-bottom: 60px;
+    }
+
+    .brand-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 40px;
+
+        &_1 {
+            margin-top: 0;
+        }
+
+        &__img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &_3 {
+            position: static;
+        }
+    }
+
+    .brand-block_1 .brand-content {
+        padding-bottom: 0;
+    }
+
+    .brand-content {
+        width: 100%;
+    }
+
+    .brand-awards {
+        margin-top: 40px;
+        grid-column: 1/3;
+        justify-content: space-around;
+    }
+    .brand-content__title{
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 780px) {
@@ -231,6 +278,14 @@
 
     .footer__banners {
         flex-direction: column;
+    }
+    .brand {
+        &-block {
+            grid-template-columns: 1fr;
+        }
+        &-awards {
+            grid-column: unset;
+        }
     }
 }
 
@@ -324,6 +379,21 @@
         &__text {
             font-size: 24px;
             line-height: 30px;
+        }
+    }
+    .brand {
+        &-awards {
+            flex-direction: column;
+            align-items: center;
+            &__img {
+                margin-right: 20px;
+                margin-bottom: 30px;
+                max-width: 100%;
+                width: 150px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
         }
     }
 }
