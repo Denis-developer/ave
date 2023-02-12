@@ -234,6 +234,17 @@
     .brand-content__title{
         padding-top: 0;
     }
+    .location {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__img {
+            width: 100%;
+        }
+        &-content {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 780px) {
@@ -285,6 +296,18 @@
         }
         &-awards {
             grid-column: unset;
+        }
+    }
+    .address {
+        &__wrapper {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+    .location {
+        margin-bottom: 60px;
+        &__img {
+            min-height: 400px;
         }
     }
 }
@@ -381,6 +404,12 @@
             line-height: 30px;
         }
     }
+    .intro__title {
+        font-size: 8vw;
+    }
+    .intro__text {
+        font-size: 6vw;
+    }
     .brand {
         &-awards {
             flex-direction: column;
@@ -394,6 +423,11 @@
                     margin: 0;
                 }
             }
+        }
+    }
+    .location {
+        &__img {
+            min-height: 300px;
         }
     }
 }

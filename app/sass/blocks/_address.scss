@@ -1,0 +1,60 @@
+.address {
+    padding: 60px 0px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__title {
+            font-size: 18px;
+            font-weight: 400;
+            color: #575153;
+            text-transform: uppercase;
+        }
+
+        &__subtitle {
+            font-size: 13px;
+            font-weight: 300;
+            color: #727272;
+            text-transform: uppercase;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #8e8c8c;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+
+        &__btn {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #454647;
+            width: 220px;
+            height: 60px;
+            border: 2px solid #737373;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s;
+
+            &:hover {
+                background: $blue;
+                color: #fff;
+                border-color: $blue;
+            }
+        }
+    }
+}

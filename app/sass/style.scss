@@ -9,6 +9,9 @@
 @import "blocks/lookbook";
 @import "blocks/footer";
 @import "blocks/brand";
+@import "blocks/intro";
+@import "blocks/address";
+@import "blocks/location";
 
 * {
     box-sizing: border-box; 
@@ -33,6 +36,9 @@ body {
     margin: 0 auto;
 }
 
+.page {
+    overflow: hidden;
+}
 
 
 @import "blocks/media";
