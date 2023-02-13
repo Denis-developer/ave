@@ -177,6 +177,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 10;
 }
 
 .header__logo {
@@ -370,7 +371,7 @@
           justify-content: space-between;
   min-height: 95vh;
   padding-bottom: 120px;
-  background: url(../img/main/main-bg.jpg) no-repeat center center/cover;
+  background: url(../img/main_page/main-bg.jpg) no-repeat center center/cover;
   background-color: #f8f8f8;
 }
 
@@ -415,7 +416,7 @@
 .header__hamburger {
   display: none;
   position: relative;
-  z-index: 5;
+  z-index: 11;
   width: 30px;
   height: 18px;
   cursor: pointer;
@@ -559,7 +560,7 @@
 .catalog-info {
   position: absolute;
   bottom: 0;
-  z-index: 2;
+  z-index: 5;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
@@ -1101,7 +1102,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 160px 0px;
-  background: url(../img/brand/intro.jpg) no-repeat center center/cover;
+  background: url(../img/intro.jpg) no-repeat center center/cover;
   color: #fff;
   text-align: center;
 }
@@ -1352,6 +1353,134 @@
   margin-right: 0;
 }
 
+.page__lookbook .catalog__wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.page__lookbook .catalog-item {
+  grid-row: unset;
+  grid-column: unset;
+  max-height: 500px;
+  height: 26vw;
+}
+
+.page__lookbook .catalog-block {
+  position: relative;
+  background-color: #efefed;
+  max-height: 500px;
+  height: 26vw;
+}
+
+.page__lookbook .catalog-block__img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.page__lookbook .catalog-block_1 {
+  grid-column: 3/5;
+}
+
+.page__lookbook .catalog-block_1 .catalog-block__img {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.page__lookbook .catalog-block_2 {
+  grid-column: 1/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__lookbook .catalog-block_2 .catalog-block__text {
+  max-width: 510px;
+}
+
+.page__lookbook .catalog-block__content {
+  position: relative;
+  z-index: 2;
+  padding: 3vw 15px;
+}
+
+.page__lookbook .catalog-block__title {
+  color: #575153;
+  font-size: 2.5vw;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.page__lookbook .catalog-block__title span {
+  font-weight: 700;
+}
+
+.page__lookbook .catalog-block__subtitle {
+  color: #727272;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0px;
+}
+
+.page__lookbook .catalog-block__text {
+  font-family: "Roboto", sans-serif;
+  color: #8e8c8c;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  max-width: 320px;
+}
+
+.page__lookbook .catalog-block__btn {
+  padding: 18px 33px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  border: 2px solid #737373;
+  text-decoration: none;
+  color: #454647;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.page__lookbook .catalog-block__btn:hover {
+  color: #fff;
+  background-color: #00c8c8;
+  border-color: #00c8c8;
+}
+
+.page__lookbook .catalog-block__caption {
+  color: #00c8c8;
+  font-size: 3.5vw;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: right;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  z-index: 2;
+}
+
+.page__lookbook .catalog-block__caption span {
+  font-size: 11vw;
+  line-height: 8vw;
+  display: block;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1412,6 +1541,33 @@ body {
   }
   .lookbook-content__title {
     font-size: 3vw;
+  }
+  .page__lookbook .catalog-block__content {
+    width: 60%;
+  }
+  .page__lookbook .catalog-block__text {
+    max-width: 100% !important;
+  }
+  .page__lookbook .catalog-block {
+    height: auto;
+    width: 100%;
+  }
+  .page__lookbook .catalog-block_1, .page__lookbook .catalog-block_2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    grid-column: 1/5;
+  }
+  .page__lookbook .catalog-block_2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .page__lookbook .catalog-block_2 .catalog-block__img {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 1;
   }
 }
 @media (max-width: 1200px) {
@@ -1543,7 +1699,7 @@ body {
   .header__hamburger {
     display: block;
   }
-  .catalog__wrapper {
+  .catalog__wrapper, .page__lookbook .catalog__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1554,11 +1710,13 @@ body {
         flex-wrap: wrap;
     gap: 0px;
   }
-  .catalog-item {
+  .catalog-item, .page__lookbook .catalog-item {
+    max-height: none;
+    height: 100%;
     width: 48%;
     margin-bottom: 20px;
   }
-  .catalog-item:last-child {
+  .catalog-item:last-child, .page__lookbook .catalog-item:last-child {
     margin-bottom: 0;
   }
   .lookbook-block {
@@ -1616,6 +1774,9 @@ body {
   }
   .location-content {
     width: 100%;
+  }
+  .page__lookbook .catalog-block {
+    margin-top: 30px;
   }
 }
 @media (max-width: 780px) {
@@ -1679,6 +1840,15 @@ body {
   .location__img {
     min-height: 400px;
   }
+  .page__lookbook .catalog-block__img, .page__lookbook .catalog-block__caption {
+    display: none;
+  }
+  .page__lookbook .catalog-block__content {
+    width: 100%;
+  }
+  .page__lookbook .catalog-block__title {
+    font-size: 6vw;
+  }
 }
 @media (max-width: 576px) {
   .header__bottom_right {
@@ -1722,7 +1892,7 @@ body {
   .catalog__line {
     margin: 40px 0px;
   }
-  .catalog-item {
+  .catalog-item, .page__lookbook .catalog-item {
     width: 100%;
   }
   .footer__lists {
@@ -1790,6 +1960,18 @@ body {
   }
   .location__img {
     min-height: 300px;
+  }
+  .page__lookbook .catalog-block {
+    padding: 20px 10px;
+  }
+  .page__lookbook .catalog-block__content {
+    padding: 0px;
+  }
+  .page__lookbook .catalog-block__btn {
+    padding: 15px 20px;
+  }
+  .page__lookbook .catalog-block__title {
+    font-size: 6vw;
   }
 }
 @media (max-width: 400px) {

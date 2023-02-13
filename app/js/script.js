@@ -31,12 +31,12 @@ for (let i = 0; i < catalogPreview.length; i++) {
 }
 
 
-let menuLink = document.querySelectorAll('.header-menu__link');
-for (let i = 0; i < menuLink.length; i++) {
-    menuLink[i].addEventListener('click', function (e) {
-        if (this.nextSibling) {
-            e.preventDefault();
-        }
-    })
-}
+// let menuLink = document.querySelectorAll('.header-menu__link');
+// for (let i = 0; i < menuLink.length; i++) {
+//     menuLink[i].addEventListener('click', function (e) {
+//         if (this.nextSibling) {
+//             e.preventDefault();
+//         }
+//     })
+// }
 

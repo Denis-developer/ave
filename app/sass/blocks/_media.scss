@@ -41,6 +41,31 @@
             font-size: 3vw;
         }
     }
+    .page__lookbook {
+        .catalog-block__content{
+            width: 60%;
+        }
+        .catalog-block__text{
+            max-width: 100% !important;
+        }
+        .catalog-block {
+            height: auto;
+            width: 100%;
+        }
+        .catalog-block_1, .catalog-block_2 {
+            order: 2;
+            grid-column: 1 / 5;
+        }
+        .catalog-block_2 {
+            order: 3;
+            .catalog-block__img {
+                position: absolute;
+                right: 20px;
+                bottom: 0;
+                z-index: 1;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -166,14 +191,16 @@
         display: block;
     }
 
-    .catalog__wrapper {
+    .catalog__wrapper, .page__lookbook .catalog__wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 0px;
     }
 
-    .catalog-item {
+    .catalog-item, .page__lookbook .catalog-item {
+        max-height: none;
+        height: 100%;
         width: 48%;
         margin-bottom: 20px;
 
@@ -245,6 +272,11 @@
             width: 100%;
         }
     }
+    .page__lookbook {
+        .catalog-block {
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width: 780px) {
@@ -310,6 +342,19 @@
             min-height: 400px;
         }
     }
+    .page__lookbook {
+        .catalog-block {
+            &__img, &__caption {
+                display: none;
+            }
+            &__content {
+                width: 100%;
+            }
+            &__title {
+                font-size: 6vw;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -362,7 +407,7 @@
         margin: 40px 0px;
     }
 
-    .catalog-item {
+    .catalog-item, .page__lookbook .catalog-item {
         width: 100%;
     }
 
@@ -428,6 +473,20 @@
     .location {
         &__img {
             min-height: 300px;
+        }
+    }
+    .page__lookbook {
+        .catalog-block {
+            padding: 20px 10px;
+            &__content {
+                padding: 0px;
+            }
+            &__btn {
+                padding: 15px 20px;
+            }
+            &__title {
+                font-size: 6vw;
+            }
         }
     }
 }
