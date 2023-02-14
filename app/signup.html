@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The brand</title>
+  <title>Our lookbook</title>
   <!-- CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
@@ -45,6 +45,7 @@
         </div>
       </div>
     </div>
+
     <header class="header">
       <div class="container_big">
         <div class="header__bottom">
@@ -200,7 +201,8 @@
                   </div>
                 </li>
                 <li class="header-menu__item">
-                  <a href="lookbook.html" class="header-menu__link">Look book<i class="fa-solid fa-chevron-down"></i></a>
+                  <a href="lookbook.html" class="header-menu__link">Look book<i
+                      class="fa-solid fa-chevron-down"></i></a>
                   <div class="header-menu__wrapper">
                     <div class="header-menuBlock">
                       <ul class="header-menuBlock__list">
@@ -251,75 +253,39 @@
     </header>
 
     <div class="intro">
-      <h1 class="intro__title"><span>the</span> brand</h1>
-      <p class="intro__text">company slogan goes here</p>
+      <h1 class="intro__title"><span>welcome</span> to Ave</h1>
+      <p class="intro__text">sign in or register</p>
     </div>
 
-    <section class="brand">
+    <section class="auth">
       <div class="container_small">
-        <div class="brand-block brand-block_1">
-          <img src="img/brand_page/img-1.jpg" alt="" class="brand-block__img">
-          <div class="brand-content">
-            <h3 class="brand-content__title">hand designed clothing</h3>
-            <h6 class="brand-content__subtitle">established in 2013, avenue fashion Sed dictum elit vel
-              sapien
-              luctus eras
-            </h6>
-            <p class="brand-content__text">Praesent feugiat malesuada tristique maecenas rhoncus diam eget
-              quam
-              vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta
-              magnis
-              disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus
-              vitae,
-              rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis
-              consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
-            </p>
+        <div class="auth__wrapper">
+          <div class="auth-block">
+            <h5 class="auth-block__title">Sign in</h5>
+            <form action="#" class="auth-form">
+              <input type="email" class="auth-form__input" placeholder="Your Email..">
+              <input type="password" class="auth-form__input" placeholder="Your password..">
+              <div class="auth-form__wrapper">
+                <input type="submit" class="auth-form__btn" value="Sign in">
+                <a href="#" class="auth-form__link">Forgot your Password &rarr;</a>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="brand__wrapper">
-          <div class="brand-block brand-block_2">
-            <img src="img/brand_page/img-2.jpg" alt="" class="brand-block__img">
-            <div class="brand-content">
-              <h3 class="brand-content__title">our values, vision and strategy</h3>
-              <h6 class="brand-content__subtitle">The above image would be a great place for an
-                advertising
-                video
-              </h6>
-              <p class="brand-content__text">Cras maximus venenatis malesuada. Nulla sagittis elit felis,
-                ac
-                facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus
-                tincidunt
-                et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.
-                Pellentesque sapien mi, <a href="#">tincidunt nec magna vitae</a>, volutpat elementum
-                odioni
-                lorem Aliquam
-                tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.
-              </p>
-            </div>
-          </div>
-          <div class="brand-block brand-block_3">
-            <img src="img/brand_page/img-3.jpg" alt="" class="brand-block__img">
-            <div class="brand-content">
-              <h3 class="brand-content__title">Ethical trading</h3>
-              <h6 class="brand-content__subtitle">we oversee the working conditions of the people in the
-                supply
-                chain
-              </h6>
-              <p class="brand-content__text">Nullam dapibus consectetur neque, faucibus porttitor purus
-                iaculis
-                sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper
-                arcu
-                lorem
-                Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras
-                viverra
-                ullamcorper nunc accumsan hendrerit. <a href="#">A link &rarr;</a>
-              </p>
-            </div>
-            <div class="brand-awards">
-              <img src="img/brand_page/award-1.png" alt="" class="brand-awards__img">
-              <img src="img/brand_page/award-2.png" alt="" class="brand-awards__img">
-              <img src="img/brand_page/award-3.png" alt="" class="brand-awards__img">
-            </div>
+          <div class="auth-block">
+            <h5 class="auth-block__title">Register</h5>
+            <form action="#" class="auth-form auth-register">
+              <input type="email" class="auth-form__input _email _req" name="email" placeholder="Your Email..">
+              <input type="password" class="auth-form__input _pass _req" name="pass" placeholder="Your password..">
+              <input type="password" class="auth-form__input _passConfirm _req" name="pass_confirm" placeholder="Confirm password..">
+              <input type="checkbox" class="auth-form__checkbox _req" id="checkbox" name="checkbox">
+              <label for="checkbox" class="auth-form__label">Sign up for exclusive updates, discounts, new arrivals,
+                contests, and more!</label>
+              <div class="auth-form__wrapper">
+                <input type="submit" class="auth-form__btn" value="Create Account">
+                <p class="auth-form__text">By clicking ‘Create Account’, you
+                  agree to our <a href="#" class="auth-form__link">Privacy Policy &rarr;</a></p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
