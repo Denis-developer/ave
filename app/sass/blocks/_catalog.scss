@@ -21,7 +21,7 @@
             transition: all 0.3s;
             margin-bottom: 20px;
 
-            &_active {
+            &.active {
                 color: $blue;
             }
 
@@ -36,12 +36,16 @@
     }
 
     &__wrapper {
-        display: grid;
+        display: none;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(12, 4vw);
         gap: 30px;
         width: 100%;
         max-width: 100%;
+        transition: all 0.8s;
+        &.active {
+            display: grid;
+        }
     }
 
     &-preview {
