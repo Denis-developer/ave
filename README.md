@@ -1,6 +1,6 @@
 # Avenue fashion
 
-[Web store](#https://denis-developer.github.io/ave/) consisting of 6 pages.
+[Web store](https://denis-developer.github.io/ave/) consisting of 6 pages.
 
 ## Tools:
 
