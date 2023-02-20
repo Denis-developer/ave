@@ -33,7 +33,7 @@
                 margin: 0px 15px;
             }
 
-            div >i {
+            div>i {
                 color: #ded3aa;
 
                 &:nth-child(5) {
@@ -186,6 +186,7 @@
         min-width: 30vw;
         height: 100%;
         max-width: 570px;
+
         &__img {
             width: 100%;
             height: 100%;
@@ -219,7 +220,7 @@
 
             &:hover {
                 background-color: $blue;
-                
+
                 svg {
                     fill: #fff;
                 }
@@ -239,13 +240,16 @@
             right: 0;
         }
     }
+
     &-desc {
         margin-top: 35px;
+
         &__tabs {
             display: flex;
             flex-wrap: wrap;
             background-color: #f8f8f8;
         }
+
         &__tab {
             padding: 15px;
             font-size: 16px;
@@ -258,19 +262,28 @@
             transition: all 0.4s;
             line-height: 20px;
             cursor: pointer;
+
             &.active {
                 background-color: #333333;
                 color: #fff;
             }
+
             &:hover {
                 background-color: #333333;
                 color: #fff;
             }
         }
     }
+
     &-block {
         padding-top: 25px;
         padding-left: 15px;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
         &__title {
             font-size: 13px;
             font-weight: 400;
@@ -278,6 +291,7 @@
             text-transform: uppercase;
             margin-bottom: 15px;
         }
+
         &__text {
             font-family: 'Roboto', sans-serif;
             font-size: 15px;
